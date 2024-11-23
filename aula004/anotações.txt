@@ -1,0 +1,27 @@
+Assunto sobre variaveis e tipos primitivos;
+tipos primitivos (number/string/boolean/obejct/null/undefined/function)
+Use: typeof (para ver o tipo primitivo)
+
+/////////////////////////////////////////////
+
+Assunto tratamento de dados;
+Number.parseInt(n) - {Usa para converter números inteiros, como o 7}
+
+Number.parseFloat(n) - {Usa para converter números reais, como o 7.5}
+
+Number(n) - {É uma simplifição de Number.parseInt() e Number.parseFloat()}
+
+String(n) - {Usa para converter um número para string}
+
+n.toString() - {Usa para converter um número para string}
+
+s.length - {Usa para mostrar quantos caracteres tem a string}
+
+s.toUpperCase() - {Usa para transformar a string em MAIÚSCULA}
+
+s.toLowerCase() - {Usa para transformar a string em MINÚSCULA}
+
+n.toFixed(2).replace('o que vai ser trocado', 'o que quer trocar') - {Formata o número para 2 casa decimais, o replace usa para formartar para o real brasileiro}
+
+document.write() - {Usa para escrever na tela}
+
