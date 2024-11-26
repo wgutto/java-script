@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    main div#container {
+        width: 200px;
+        height: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: lightgreen;
+    }
+</style>
+<body>
+    <main>
+        <div id="container">
+            <p>Interaja</p>
+        </div>
+    </main>
+
+    <script>
+        var p1 = document.querySelector('p')
+        var cont = document.querySelector('main div#container')
+        cont.addEventListener('click', clicou)
+        cont.addEventListener('mouseenter', entrou)
+
+        function clicou() {
+            cont.style.backgroundColor = 'black';
+            cont.style.color = 'white'
+        }
+
+        function entrou() {
+            cont.innerHTML = 'Entrou!'
+        }
+    </script>
+</body>
+</html>

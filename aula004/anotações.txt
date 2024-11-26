@@ -86,6 +86,14 @@ Ordem de execução:
 Operadores ternário:
 o teste ? true : false
 
+//////////////////////////////////////////////////////
+
+Assunto sobre DOM;
+
+innerText = (pega somente o texto, sem as tags que contem o mesmo;)
+
+innerHTML = (pega tudo, incluindo as tags)
+
 
 
 document.write() - {Usa para escrever na tela}
