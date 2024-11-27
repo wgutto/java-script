@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+
+            background-color: lightgray;
+        }
+
+        main section#container {
+            width: 800px;
+            height: 400px;
+            text-align: center;
+            padding-top: 150px;
+
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <h1>Consulte a velocidade</h1>
+
+            <label for="ivel">Sua velocidade: </label> <input type="number" name="itxtvel" id="txtvel"> Km/h
+
+            <p id="textoarea">Carregando...</p>
+
+            <input type="submit" value="Calcular" onclick="calcular()">
+        </section>
+    </main>
+
+    <script>
+            var textoarea = document.querySelector('section p#textoarea')
+            var velmax = 60
+            var txtvel = document.querySelector('input#txtvel')
+
+        function calcular() {
+            var vel = Number(txtvel.value)
+
+
+            if(vel > velmax) {
+                textoarea.innerHTML = `A velocidade máxima da via é ${velmax}Km/h você foi multado por está a ${vel}Km/h, ultrapassando ${vel - velmax}Km/h da velocidade permitida.`
+            } else {
+                textoarea.innerHTML = 'Sua velocidade é compatível com a via.'
+            }
+    }
+    </script>
+</body>
+</html>
