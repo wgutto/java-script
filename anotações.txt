@@ -94,7 +94,11 @@ innerText = (pega somente o texto, sem as tags que contem o mesmo;)
 
 innerHTML = (pega tudo, incluindo as tags)
 
+/////////////////////////////////////////////////////
 
+Assunto sobre Condição;
+
+Condição multipla (switch, sempre usar o break)
 
 document.write() - {Usa para escrever na tela}
 
