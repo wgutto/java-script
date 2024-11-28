@@ -20,14 +20,47 @@ main {
     width: 600px;
     height: 400px;
     padding: 10px;
-    text-align: justify;
     border-radius: 10px;
     margin: 20px 0px;
+    text-align: center;
 
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     background-color: lightgray;
 }
+
+main div #nascimento {
+    width: 210px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.452);
+}
+main div#info p {
+    padding: 15px 0px;
+}
+main div #botao {
+    margin: 10px;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    border: 1px solid rgba(0, 0, 0, 0.507);
+}
+main div #txtresultado {
+    padding-bottom: 15px;
+}
+main div#resultado img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 footer {
     font-style: italic;
+    text-decoration: underline;
 }
 

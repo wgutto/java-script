@@ -11,22 +11,25 @@
         <h1>Verificador de idade</h1>
     </header>
     <main>
-        <div>
+        <div id="info">
                     <label for="nascimento">Ano de nascimento:</label>
                     <input type="number" name="inascimento" id="nascimento" placeholder="digite o ano do seu nascimento"> <br>
-                    <span>Sexo:</span>
-                    <input type="radio" name="sexo" id="smasculino">
-                    <label for="smasculino">Masculino</label>
-                    <input type="radio" name="sexo" id="sfeminino">
-                    <label for="sfeminino">Feminino</label> <br>
-                    <input type="submit" value="Verificar" id="botao">
+                    
+                    <p>Sexo:
+                        <input type="radio" name="sexo" id="smasculino" checked>
+                        <label for="smasculino">Masculino</label>
+                        <input type="radio" name="sexo" id="sfeminino">
+                        <label for="sfeminino">Feminino</label> <br>
+                        <input type="submit" value="Verificar" id="botao">
+                    </p>
         </div>
         <div id="resultado">
+            <p id="txtresultado">Preencha as informações solicidatas.</p>
             <img src="images/adulto-f.jpg" alt="Foto adulto mulher">
         </div>
     </main>
     <footer>
-        <p>&copy; CursoemVídeo</p>
+        <p>&copy; Augusto Brito.</p>
     </footer>
 
     <script src="js/script.js">
