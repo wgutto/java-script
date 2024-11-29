@@ -100,5 +100,25 @@ Assunto sobre Condição;
 
 Condição multipla (switch, sempre usar o break)
 
+//////////////////////////////////////////////////////
+
+Assunto sobre Repetições;
+
+white(condição) {
+    (o que vai aconter)     ==> (cuidado para não repetir infinitamente, usar sempre o elemento++)
+    elemento++
+}
+
+
+do {
+    (o que vai aconter)     ==> (mesmo sentido, só que primeiro vai exexutar o bloco e depois o teste)
+    elemento++
+} white(condição)
+
+
+for (inicio[var c = 1]; condição[c <= 10]; incremento[c++]) {
+    (o que vai aconter)                                           ==> (é o mais utilizado em grande parte dos projeto)
+}
+
 document.write() - {Usa para escrever na tela}
 
