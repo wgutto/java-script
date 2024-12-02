@@ -122,3 +122,22 @@ for (inicio[var c = 1]; condição[c <= 10]; incremento[c++]) {
 
 document.write() - {Usa para escrever na tela}
 
+
+/////////////////////////////////////////////////////////
+
+Assunto variaveis compostas;
+
+var num = [1,4,5]
+
+num[3] = 7 (vai adicionar ao array/vetor o sete na posição indicada, no caso a 3)
+
+num.push(7) (Vai adicionar ao array/vetor o sete na ultima posição)
+
+num.length (verifica o tamanho do array/vetor, começa a contar no 1)
+
+num.sort() (vai ordenar os itens em ordem crescente)
+
+for (let pos in num) {
+    console.log(num[pos])  ==> (Esse for só funciona com arrays e objetos)
+}
+
