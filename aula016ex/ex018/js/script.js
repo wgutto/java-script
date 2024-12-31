@@ -12,15 +12,15 @@ function adicionar() {
 
     resultado.innerHTML = ''
 
-    if(txtnumero.value > 0 && txtnumero.value <= 100 && valores.indexOf(Number(txtnumero.value)) == -1) {
-        valores.push(Number(txtnumero.value))
-        let item = document.createElement('option')
-        item.text = `Número ${txtnumero.value} adicionado`
-        lista.appendChild(item)
-
+    if(txtnumero.value == '' || txtnumero.value > 100 || valores.includes(Number(txtnumero.value)) == true) {
+        alert('[ERRO] Valor já adicionado, ou inválido.')
     } else {
-        alert('[ERRO] Número inválido ou já adiconado.')
+        valores.push(Number(txtnumero.value))
+        let option = document.createElement('option')
+        option.innerHTML = `Número ${txtnumero.value} adicionado.`
+        lista.appendChild(option)
     }
+
     txtnumero.value = ''
     txtnumero.focus()
 
@@ -46,40 +46,18 @@ function finalizar() {
         }
         media = soma / total
 
-        resultado.innerHTML += `<p>O total de números da lista é <strong>${total}</strong></p>`
-        resultado.innerHTML += `<p>O maior valor da lista é <strong>${maior}</strong></p>`
-        resultado.innerHTML += `<p>O menor valor da lista é <strong>${menor}</strong></p>`
-        resultado.innerHTML += `<p>A soma dos valores da lista é <strong>${soma}</strong></p>`
-        resultado.innerHTML += `<p>A média dos valores da lista é <strong>${media.toFixed(2)}</strong></p>`
+        if(resultado.innerHTML == '') {
+
+            resultado.innerHTML += `<p>O total de números da lista é <strong>${total}</strong></p>`
+            resultado.innerHTML += `<p>O maior valor da lista é <strong>${maior}</strong></p>`
+            resultado.innerHTML += `<p>O menor valor da lista é <strong>${menor}</strong></p>`
+            resultado.innerHTML += `<p>A soma dos valores da lista é <strong>${soma}</strong></p>`
+            resultado.innerHTML += `<p>A média dos valores da lista é <strong>${media.toFixed(2)}</strong></p>`
+        } else {
+            alert('[ERRO] Clique em ADICIONAR para fazer uma nova operação.')
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
