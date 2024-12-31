@@ -47,7 +47,6 @@ function finalizar() {
         media = soma / total
 
         if(resultado.innerHTML == '') {
-
             resultado.innerHTML += `<p>O total de números da lista é <strong>${total}</strong></p>`
             resultado.innerHTML += `<p>O maior valor da lista é <strong>${maior}</strong></p>`
             resultado.innerHTML += `<p>O menor valor da lista é <strong>${menor}</strong></p>`
